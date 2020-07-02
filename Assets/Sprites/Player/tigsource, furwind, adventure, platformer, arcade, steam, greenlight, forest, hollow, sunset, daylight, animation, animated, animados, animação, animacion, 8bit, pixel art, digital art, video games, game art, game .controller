@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!91 &9100000
+AnimatorController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "tigsource, furwind, adventure, platformer, arcade, steam, greenlight,
+    forest, hollow, sunset, daylight, animation, animated, animados, anima\xE7\xE3o,
+    animacion, 8bit, pixel art, digital art, video games, game art, game "
+  serializedVersion: 5
+  m_AnimatorParameters: []
+  m_AnimatorLayers: []

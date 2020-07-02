@@ -32,11 +32,14 @@ public class MovementScript : MonoBehaviour
         Vector2 direction = new Vector2(x, y);
         Run(direction);
         anim.SetHorizontalMovementToAnim(x, y, rb2d.velocity.y);
+
+        
     }
 
     void MovementX(){
- 
+
     }
+    
     
 
     void Jump(){

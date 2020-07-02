@@ -17,6 +17,8 @@ public class AnimationScript : MonoBehaviour
     void Update()
     {
         
+
+        
     }
 
     public void SetHorizontalMovementToAnim(float x, float y, float yVel)
