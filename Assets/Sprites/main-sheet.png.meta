@@ -4,52 +4,178 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1289639033770026398
-    second: main-sheet_0
+    second: idle-sem-touca1
   - first:
       213: 6359167140137153972
-    second: main-sheet_1
+    second: idle-sem-touca2
   - first:
       213: -1504035597173121246
-    second: main-sheet_2
+    second: idle-sem-touca3
   - first:
       213: 8540405022506451345
-    second: main-sheet_3
+    second: idle-sem-touca4
   - first:
       213: 9088933038825960300
-    second: main-sheet_4
+    second: idle-touca1
   - first:
       213: 7823890475663189899
-    second: main-sheet_5
+    second: idle-touca2
   - first:
       213: 3714982278902401888
-    second: main-sheet_6
+    second: idle-touca3
   - first:
       213: 4805714888233842885
-    second: main-sheet_7
+    second: idle-touca4
   - first:
       213: -5475232120255375433
-    second: main-sheet_8
+    second: tirando-touca1
   - first:
       213: 8146810838053005599
-    second: main-sheet_9
+    second: tirando-touca2
   - first:
       213: -3335999860012048679
-    second: main-sheet_10
+    second: correndo1
   - first:
       213: 3085299820785167870
-    second: main-sheet_11
+    second: correndo2
   - first:
       213: -6757657987140406667
-    second: main-sheet_12
+    second: correndo3
   - first:
       213: 336368653758575311
-    second: main-sheet_13
+    second: correndo4
   - first:
       213: -5628425643955421467
-    second: main-sheet_14
+    second: correndo5
   - first:
       213: 1057680736508336952
-    second: main-sheet_15
+    second: correndo6
+  - first:
+      213: -5776298623048309398
+    second: idle-sem-touca1
+  - first:
+      213: 6896723270709617979
+    second: idle-sem-touca2
+  - first:
+      213: -7491739246793046725
+    second: idle-sem-touca3
+  - first:
+      213: -2225226203128762070
+    second: idle-sem-touca4
+  - first:
+      213: -8290098252273188889
+    second: idle-touca1
+  - first:
+      213: 6472202787020542984
+    second: idle-touca2
+  - first:
+      213: -8258316706229590829
+    second: idle-touca3
+  - first:
+      213: 2047588377985654673
+    second: idle-touca4
+  - first:
+      213: 2991794170824842977
+    second: tirando-touca1
+  - first:
+      213: -1683640277426388643
+    second: tirando-touca2
+  - first:
+      213: 5635169426188253568
+    second: correndo1
+  - first:
+      213: 1355839412462471913
+    second: correndo2
+  - first:
+      213: -2587197407166821602
+    second: correndo3
+  - first:
+      213: -7753663953540890823
+    second: correndo4
+  - first:
+      213: -4962052107841423970
+    second: correndo5
+  - first:
+      213: -8742355289688554562
+    second: correndo6
+  - first:
+      213: 1597593439403985390
+    second: jump-sem-touca1
+  - first:
+      213: -8232754178534792354
+    second: jump-sem-touca2
+  - first:
+      213: -1453598669564055884
+    second: jump-sem-touca3
+  - first:
+      213: -1263533475548556900
+    second: jump-sem-touca4
+  - first:
+      213: -6760997433465658815
+    second: jump-sem-touca5
+  - first:
+      213: 8633268703614731570
+    second: jump-sem-touca6
+  - first:
+      213: -1513090166967097860
+    second: jump-touca1
+  - first:
+      213: 3523419340756335021
+    second: jump-touca2
+  - first:
+      213: -2169409520065431653
+    second: jump-touca3
+  - first:
+      213: -5284689019245521076
+    second: jump-touca4
+  - first:
+      213: -4499757309156733200
+    second: jump-touca5
+  - first:
+      213: -8343926250411323539
+    second: jump-touca6
+  - first:
+      213: -8117663350781725829
+    second: ciclo-queda1
+  - first:
+      213: -6536818465833358937
+    second: ciclo-queda2
+  - first:
+      213: -4948848600988709910
+    second: ciclo-queda3
+  - first:
+      213: 1366228073356164464
+    second: ciclo-queda4
+  - first:
+      213: -5709583933094766145
+    second: ciclo-queda5
+  - first:
+      213: 253498714938388901
+    second: ciclo-queda6
+  - first:
+      213: 8886908055865343768
+    second: pousando1
+  - first:
+      213: 2576555953810328528
+    second: pousando2
+  - first:
+      213: -3951865384866924706
+    second: colocando-touca1
+  - first:
+      213: 8202421415415713996
+    second: colocando-touca2
+  - first:
+      213: 4616174734917982217
+    second: colocando-touca3
+  - first:
+      213: -6386412354399234729
+    second: colocando-touca4
+  - first:
+      213: -5942240868975502505
+    second: colocando-touca5
+  - first:
+      213: 7100880396886697599
+    second: main-sheet_41
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,13 +261,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main-sheet_0
+      name: idle-sem-touca1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
         width: 14
-        height: 26
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,19 +275,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26ad8afa1284a1ee0800000000000000
-      internalID: -1289639033770026398
+      spriteID: a65a0a8a10776dfa0800000000000000
+      internalID: -5776298623048309398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main-sheet_1
+      name: idle-sem-touca2
       rect:
         serializedVersion: 2
-        x: 29
+        x: 40
         y: 0
-        width: 19
+        width: 14
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3521d8364516bf50800000000000000
+      internalID: 6896723270709617979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-sem-touca3
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 13
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -170,166 +317,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b5363752dc404850800000000000000
-      internalID: 6359167140137153972
+      spriteID: b354c0519def70890800000000000000
+      internalID: -7491739246793046725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main-sheet_2
+      name: idle-sem-touca4
       rect:
         serializedVersion: 2
-        x: 58
+        x: 104
         y: 0
-        width: 24
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22f14f4d797902be0800000000000000
-      internalID: -1504035597173121246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_3
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 0
-        width: 23
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19185747e1d958670800000000000000
-      internalID: 8540405022506451345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_4
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 0
-        width: 23
-        height: 22
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c63788e8170622e70800000000000000
-      internalID: 9088933038825960300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_5
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 0
-        width: 23
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8767735fea049c60800000000000000
-      internalID: 7823890475663189899
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_6
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 0
-        width: 22
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06b49d823b44e8330800000000000000
-      internalID: 3714982278902401888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_7
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 0
-        width: 21
-        height: 22
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c8fbf4aa3451b240800000000000000
-      internalID: 4805714888233842885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_8
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 0
-        width: 19
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b79e5945611404b0800000000000000
-      internalID: -5475232120255375433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_9
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 0
-        width: 15
+        width: 14
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -338,80 +338,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f19a3762b494f0170800000000000000
-      internalID: 8146810838053005599
+      spriteID: a217e99de886e11e0800000000000000
+      internalID: -2225226203128762070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main-sheet_10
+      name: idle-touca1
       rect:
         serializedVersion: 2
-        x: 319
-        y: 0
-        width: 15
-        height: 26
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9de9a3d5dc524b1d0800000000000000
-      internalID: -3335999860012048679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_11
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 0
-        width: 14
-        height: 26
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efde97327df21da20800000000000000
-      internalID: 3085299820785167870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_12
-      rect:
-        serializedVersion: 2
-        x: 377
-        y: 0
-        width: 15
-        height: 26
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5723ae24dd9f732a0800000000000000
-      internalID: -6757657987140406667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main-sheet_13
-      rect:
-        serializedVersion: 2
-        x: 408
+        x: 135
         y: 0
         width: 16
         height: 25
@@ -422,17 +359,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc23bd822850ba400800000000000000
-      internalID: 336368653758575311
+      spriteID: 7ef7b28ff87a3fc80800000000000000
+      internalID: -8290098252273188889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main-sheet_14
+      name: idle-touca2
       rect:
         serializedVersion: 2
-        x: 441
+        x: 168
         y: 0
         width: 15
         height: 25
@@ -443,17 +380,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ee765f82b0d3e1b0800000000000000
-      internalID: -5628425643955421467
+      spriteID: 80417a2c422e1d950800000000000000
+      internalID: 6472202787020542984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main-sheet_15
+      name: idle-touca3
       rect:
         serializedVersion: 2
-        x: 474
+        x: 201
         y: 0
         width: 14
         height: 26
@@ -464,8 +401,722 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83b5a59a603adae00800000000000000
-      internalID: 1057680736508336952
+      spriteID: 3d4e28ac5b0946d80800000000000000
+      internalID: -8258316706229590829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-touca4
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 15
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f9d0cf7ce7a6c10800000000000000
+      internalID: 2047588377985654673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tirando-touca1
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 19
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee591972fcf48920800000000000000
+      internalID: 2991794170824842977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tirando-touca2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 20
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51c576861282a8e0800000000000000
+      internalID: -1683640277426388643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: correndo1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 0
+        width: 24
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089b7199cb4243e40800000000000000
+      internalID: 5635169426188253568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: correndo2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 23
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eacc4813c8e0d210800000000000000
+      internalID: 1355839412462471913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: correndo3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 23
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b820e6aad681cd0800000000000000
+      internalID: -2587197407166821602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: correndo4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 23
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fb17507b3756490800000000000000
+      internalID: -7753663953540890823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: correndo5
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0
+        width: 22
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e953223e5ef332bb0800000000000000
+      internalID: -4962052107841423970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: correndo6
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 21
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb34bd9de2aeca680800000000000000
+      internalID: -8742355289688554562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-sem-touca1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 15
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee94b2bc4cacb2610800000000000000
+      internalID: 1597593439403985390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-sem-touca2
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 0
+        width: 16
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53225191b16fbd80800000000000000
+      internalID: -8232754178534792354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-sem-touca3
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 19
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be67a626b7c3dbe0800000000000000
+      internalID: -1453598669564055884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-sem-touca4
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 0
+        width: 14
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c911d1c9ff6077ee0800000000000000
+      internalID: -1263533475548556900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-sem-touca5
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 0
+        width: 17
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142a3f2d7ac1c22a0800000000000000
+      internalID: -6760997433465658815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-sem-touca6
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 0
+        width: 19
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235047915288fc770800000000000000
+      internalID: 8633268703614731570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-touca1
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 0
+        width: 17
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf52ac4828c600be0800000000000000
+      internalID: -1513090166967097860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-touca2
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 0
+        width: 17
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9b588f833b5e030800000000000000
+      internalID: 3523419340756335021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-touca3
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 0
+        width: 19
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9736281985b4e1e0800000000000000
+      internalID: -2169409520065431653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-touca4
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 0
+        width: 14
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c479673265309a6b0800000000000000
+      internalID: -5284689019245521076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-touca5
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 0
+        width: 17
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fece3c6196ad81c0800000000000000
+      internalID: -4499757309156733200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-touca6
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 0
+        width: 19
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f0d24884b643c80800000000000000
+      internalID: -8343926250411323539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ciclo-queda1
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 0
+        width: 14
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73b2721134485f80800000000000000
+      internalID: -8117663350781725829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ciclo-queda2
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 0
+        width: 12
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9e9c62d3e8845a0800000000000000
+      internalID: -6536818465833358937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ciclo-queda3
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 0
+        width: 14
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb01e2ea68225bb0800000000000000
+      internalID: -4948848600988709910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ciclo-queda4
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 0
+        width: 14
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d7f82b131d5f210800000000000000
+      internalID: 1366228073356164464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ciclo-queda5
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 0
+        width: 17
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9db9cd9ab73c0b0800000000000000
+      internalID: -5709583933094766145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ciclo-queda6
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 0
+        width: 16
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1bbe6fcbb948300800000000000000
+      internalID: 253498714938388901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pousando1
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 0
+        width: 21
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f396dbac3a45b70800000000000000
+      internalID: 8886908055865343768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pousando2
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 21
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db48c22df3c1c320800000000000000
+      internalID: 2576555953810328528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colocando-touca1
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 0
+        width: 13
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5738dece572829c0800000000000000
+      internalID: -3951865384866924706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colocando-touca2
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 0
+        width: 13
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc019eba1dad4d170800000000000000
+      internalID: 8202421415415713996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colocando-touca3
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 0
+        width: 15
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9085befb672ff0040800000000000000
+      internalID: 4616174734917982217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colocando-touca4
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 0
+        width: 15
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7551ed2ecc7ee57a0800000000000000
+      internalID: -6386412354399234729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colocando-touca5
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 0
+        width: 14
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b18eab96be88da0800000000000000
+      internalID: -5942240868975502505
       vertices: []
       indices: 
       edges: []
