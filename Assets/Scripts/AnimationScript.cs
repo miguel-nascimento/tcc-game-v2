@@ -17,14 +17,11 @@ public class AnimationScript : MonoBehaviour
     void Update()
     {
         
-
-        
     }
 
-    public void SetHorizontalMovementToAnim(float x, float y, float yVel)
+    public void SetHorizontalMovementToAnim(float x, float y)
     {
-        anim.SetFloat("HorizontalAxis", x);
-        anim.SetFloat("VerticalAxis", y);
-        anim.SetFloat("VerticalVelocity", yVel);
+        anim.SetFloat("HorizontalVelocity", x);
+        anim.SetFloat("VerticalVelocity", y);
     }
 }

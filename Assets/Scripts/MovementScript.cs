@@ -28,23 +28,17 @@ public class MovementScript : MonoBehaviour
         float y = Input.GetAxis("Vertical");
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
-        
         Vector2 direction = new Vector2(x, y);
-        Run(direction);
-        anim.SetHorizontalMovementToAnim(x, y, rb2d.velocity.y);
-
         
-    }
+        Run(direction);
+        Jump();
 
-    void MovementX(){
-
+        anim.SetHorizontalMovementToAnim(x, y);
     }
-    
-    
 
     void Jump(){
         //Caso o espaço ou W esteja apertada, muda a velocidade em Y, fazendo ele "subir"
-        if (Input.GetKey("space")){
+        if (Input.GetKey("w")){
             rb2d.velocity = new Vector2(rb2d.velocity.x, Force);
         }
     }
