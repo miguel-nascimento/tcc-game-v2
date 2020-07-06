@@ -2,15 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class MovementScript : MonoBehaviour
 {
+    private CollisionScript coll;
     AnimationScript anim;
     Rigidbody2D rb2d;
     SpriteRenderer spriteRenderer;
     public float Speed;
-    public float Force;
+    public float jumpForce;
     public float wallJumpLerp;
+
+    public float fallMultiplier = 2.5f;
+    
+    public float lowJumpMulplier = 2f;
+
+    private Vector2 velocity;
 
  
     // Start is called before the first frame update
@@ -19,6 +25,8 @@ public class MovementScript : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<AnimationScript>();
+        coll = GetComponent<CollisionScript>();
+        
     }
 
     // Update is called once per frame
@@ -31,18 +39,29 @@ public class MovementScript : MonoBehaviour
         Vector2 direction = new Vector2(x, y);
         
         Run(direction);
-        Jump();
-
         anim.SetHorizontalMovementToAnim(x, y);
+        Jump();
+        // BetterJump();
     }
+
+    // TODO: Fail in input checking
+    // void BetterJump(){
+    //     if(rb2d.velocity.y < 0){
+    //         rb2d.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+    //     }
+    //     else if (rb2d.velocity.y > 0 ){
+    //         rb2d.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMulplier - 1) * Time.deltaTime; 
+    //     }
+    // }
 
     void Jump(){
         //Caso o espaço ou W esteja apertada, muda a velocidade em Y, fazendo ele "subir"
-        if (Input.GetKey("w")){
-            rb2d.velocity = new Vector2(rb2d.velocity.x, Force);
+        if (Input.GetKey("w") && coll.isGrounded){
+            rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
         }
     }
 
+    
     private void Run(Vector2 direction)
     {
         rb2d.velocity = Vector2.Lerp(rb2d.velocity, (new Vector2(direction.x * Speed, rb2d.velocity.y)), wallJumpLerp * Time.deltaTime);

@@ -13,18 +13,19 @@ public class CollisionScript : MonoBehaviour
 
     [Space]
 
-    public bool onGround;
+    public bool isGrounded;
 
+    public Vector2 BelowDistance;
 
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        onGround = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
+        isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
+        // Raycast2D BelowDistance = Physics2D.Raycast(transform.position, Vector2.down, )
     }
 }
