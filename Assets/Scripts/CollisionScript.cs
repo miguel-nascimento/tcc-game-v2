@@ -14,8 +14,10 @@ public class CollisionScript : MonoBehaviour
     [Space]
 
     public bool isGrounded;
+    
+    private LineRenderer belowLine;
 
-    public Vector2 BelowDistance;
+    public float distance;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,18 @@ public class CollisionScript : MonoBehaviour
     void Update()
     {
         isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
-        // Raycast2D BelowDistance = Physics2D.Raycast(transform.position, Vector2.down, )
+        RaycastHit2D BelowDistance = Physics2D.Raycast(transform.position, Vector2.down, distance);
+        belowLine.SetPosition(0, transform.position);
+        if (!BelowDistance){
+            Debug.DrawLine(transform.position, BelowDistance.point, Color.red);
+            belowLine.SetPosition(1, BelowDistance.point);
+        } else {
+            Debug.DrawLine(transform.position, transform.position * distance, Color.green);
+            belowLine.SetPosition(1, transform.position * distance);
+
+        }
+
+        belowLine.SetPosition(0, transform.position);
+
     }
 }
