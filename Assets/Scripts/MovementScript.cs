@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
-    private CollisionScript coll;
-    AnimationScript anim;
     Rigidbody2D rb2d;
     SpriteRenderer spriteRenderer;
     public float Speed;
@@ -18,15 +16,21 @@ public class MovementScript : MonoBehaviour
 
     private Vector2 velocity;
 
+    public float collisionRadius = 0.25f;
+    public Vector2 bottomOffset, rightOffset, leftOffset;
+
+    [Header("Layers")]
+    public LayerMask groundLayer;
+
+    [Space]
+
+    public bool isGrounded;
  
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<AnimationScript>();
-        coll = GetComponent<CollisionScript>();
-        
     }
 
     // Update is called once per frame
@@ -37,9 +41,10 @@ public class MovementScript : MonoBehaviour
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
         Vector2 direction = new Vector2(x, y);
-        
+
+        isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
+
         Run(direction);
-        anim.SetHorizontalMovementToAnim(x, y);
         Jump();
         // BetterJump();
     }
@@ -56,12 +61,11 @@ public class MovementScript : MonoBehaviour
 
     void Jump(){
         //Caso o espaço ou W esteja apertada, muda a velocidade em Y, fazendo ele "subir"
-        if (Input.GetKey("w") && coll.isGrounded){
+        if (Input.GetKey("w") && isGrounded){
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
         }
     }
 
-    
     private void Run(Vector2 direction)
     {
         rb2d.velocity = Vector2.Lerp(rb2d.velocity, (new Vector2(direction.x * Speed, rb2d.velocity.y)), wallJumpLerp * Time.deltaTime);
