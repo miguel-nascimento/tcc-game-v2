@@ -166,6 +166,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  isRunning: 0
+  isMoving: 0
+  isGrounded: 1
 --- !u!50 &7679848
 Rigidbody2D:
   serializedVersion: 4

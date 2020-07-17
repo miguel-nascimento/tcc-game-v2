@@ -8,6 +8,8 @@ public class MovementScript : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Animator anim;
     public float Speed;
+
+     Animator anim;
     public float jumpForce;
     public float wallJumpLerp;
 
@@ -25,10 +27,11 @@ public class MovementScript : MonoBehaviour
 
     [Space]
 
-    bool isGrounded;
+    public bool isRunning ;
+    public bool isMoving ;
+    public bool isGrounded;
 
-    bool isMovingInVertical;
-    bool isWithHood;
+
  
     // Start is called before the first frame update
     void Start()
@@ -46,6 +49,7 @@ public class MovementScript : MonoBehaviour
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
         Vector2 direction = new Vector2(x, y);
+
         isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
         
         if (x == 0) 
