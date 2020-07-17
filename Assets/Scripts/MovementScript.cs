@@ -6,6 +6,7 @@ public class MovementScript : MonoBehaviour
 {
     Rigidbody2D rb2d;
     SpriteRenderer spriteRenderer;
+    Animator anim;
     public float Speed;
     public float jumpForce;
     public float wallJumpLerp;
@@ -24,13 +25,17 @@ public class MovementScript : MonoBehaviour
 
     [Space]
 
-    public bool isGrounded;
+    bool isGrounded;
+
+    bool isMovingInVertical;
+    bool isWithHood;
  
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,9 +46,36 @@ public class MovementScript : MonoBehaviour
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
         Vector2 direction = new Vector2(x, y);
-
         isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
+        
+        if (x == 0) 
+        {
+            isMovingInVertical = false;
+            anim.SetBool("isMovingInVertical", isMovingInVertical);
+        } else {
+            isMovingInVertical = true;
+            anim.SetBool("isMovingInVertical", isMovingInVertical);
+        }
+        if (x > 0) {
+            spriteRenderer.flipX = false;
+        } else if (x < 0) {
+            spriteRenderer.flipX = true;
+        }
 
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("TirandoTouca"))
+        {
+            isWithHood = false;
+            anim.SetBool("isWithHood", isWithHood);
+        }
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("ColocandoTouca"))
+        {
+            isWithHood = true;
+            anim.SetBool("isWithHood", isWithHood);
+        }
+
+        anim.SetFloat("HorizontalVelocity", x);
+        anim.SetFloat("VerticalVelocity", y);
+        anim.SetBool("isGrounded", isGrounded);
         Run(direction);
         Jump();
         // BetterJump();
