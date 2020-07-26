@@ -9,7 +9,7 @@ public class MovementScript : MonoBehaviour
     Animator anim;
     public float Speed;
 
-     Animator anim;
+
     public float jumpForce;
     public float wallJumpLerp;
 
@@ -33,8 +33,10 @@ public class MovementScript : MonoBehaviour
 
     bool isMovingInHorizontal;
     bool isMovingInVertical;
-    bool isRunning;
+
     bool isWithHood;
+
+    bool isJumping;
  
     // Start is called before the first frame update
     void Start()
@@ -54,6 +56,8 @@ public class MovementScript : MonoBehaviour
         Vector2 direction = new Vector2(x, y);
 
         isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
+        
+        
         
         if (x == 0) 
         {
@@ -75,13 +79,21 @@ public class MovementScript : MonoBehaviour
 
         if (x > 0.1 || x < -0.1)
         {
-            isRunning = false;
+            isRunning = true;
             anim.SetBool("isRunning", isRunning);
         } else {
-            isRunning = true;
+            isRunning = false;
             anim.SetBool("isRunning", isRunning);
         }
 
+        if (y == 0)
+        {
+            isJumping = false;
+            anim.SetBool("isJumping", isJumping);
+        } else {
+            isJumping = true;
+            anim.SetBool("isJumping", isJumping);
+        }
 
         if (x > 0) {
             spriteRenderer.flipX = false;
