@@ -31,7 +31,10 @@ public class MovementScript : MonoBehaviour
     public bool isMoving ;
     public bool isGrounded;
 
-
+    bool isMovingInHorizontal;
+    bool isMovingInVertical;
+    bool isRunning;
+    bool isWithHood;
  
     // Start is called before the first frame update
     void Start()
@@ -54,12 +57,32 @@ public class MovementScript : MonoBehaviour
         
         if (x == 0) 
         {
+            isMovingInHorizontal = false;
+            anim.SetBool("isMovingInHorizontal", isMovingInHorizontal);
+        } else {
+            isMovingInHorizontal = true;
+            anim.SetBool("isMovingInHorizontal", isMovingInHorizontal);
+        }
+
+        if (y == 0) 
+        {
             isMovingInVertical = false;
             anim.SetBool("isMovingInVertical", isMovingInVertical);
         } else {
             isMovingInVertical = true;
             anim.SetBool("isMovingInVertical", isMovingInVertical);
         }
+
+        if (x > 0.1 || x < -0.1)
+        {
+            isRunning = false;
+            anim.SetBool("isRunning", isRunning);
+        } else {
+            isRunning = true;
+            anim.SetBool("isRunning", isRunning);
+        }
+
+
         if (x > 0) {
             spriteRenderer.flipX = false;
         } else if (x < 0) {
@@ -74,6 +97,11 @@ public class MovementScript : MonoBehaviour
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("ColocandoTouca"))
         {
             isWithHood = true;
+            anim.SetBool("isWithHood", isWithHood);
+        }
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("JumpComTouca"))
+        {
+            isWithHood = false;
             anim.SetBool("isWithHood", isWithHood);
         }
 
