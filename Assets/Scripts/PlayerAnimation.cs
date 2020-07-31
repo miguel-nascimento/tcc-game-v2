@@ -15,7 +15,6 @@ public class PlayerAnimation : MonoBehaviour
     public bool isMovingInVertical;
     public bool isWithHood;
     public bool isJumping;
-    
 
     void Start()
     {
@@ -30,10 +29,10 @@ public class PlayerAnimation : MonoBehaviour
         VelocityUpdate();
         HorizontalUpdate();
         VerticalUpdate();
-        RunningUpdate();
         HoodUpdate();
         JumpingUpdate();
         GroundUpdate();
+        JumpCounterUpdate();
     }
 
     public void FlipDirection()
@@ -71,17 +70,6 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    private void RunningUpdate()
-    {
-        if (player.x > 0.1 || player.x < -0.1)
-        {
-            isRunning = true;
-            anim.SetBool("isRunning", isRunning);
-        } else {
-            isRunning = false;
-            anim.SetBool("isRunning", isRunning);
-        }
-    }
 
     // TODO -> transfer isJumping bool to PlayerPhysics script.
     private void JumpingUpdate()
@@ -124,5 +112,10 @@ public class PlayerAnimation : MonoBehaviour
     private void GroundUpdate()
     {
         anim.SetBool("isGrounded", phys.isGrounded);
+    }
+
+    private void JumpCounterUpdate()
+    {
+        anim.SetInteger("JumpCounter", player.jumpCounter);
     }
 }

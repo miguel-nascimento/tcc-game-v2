@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     
     public float x;
     public float y;
+    public int jumpCounter;
  
     // Start is called before the first frame update
     void Start()
@@ -25,8 +26,11 @@ public class PlayerMovement : MonoBehaviour
         Vector2 direction = new Vector2(x, y);
 
         phys.UpdateCollisions();
+        if (Input.GetKeyDown("w") && phys.isGrounded || Input.GetKeyDown("w") && jumpCounter < 2){
+            phys.Jump();
+            jumpCounter++;
+        }
         phys.Run(direction);
-        phys.Jump();
         anim.FlipDirection();
         anim.UpdateConditions();
     }
