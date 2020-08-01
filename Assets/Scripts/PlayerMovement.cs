@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,16 +23,16 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         x = Input.GetAxis("Horizontal");
-        y = Input.GetAxis("Vertical");
         Vector2 direction = new Vector2(x, y);
 
         phys.UpdateCollisions();
-        if (Input.GetKeyDown("w") && phys.isGrounded || Input.GetKeyDown("w") && jumpCounter < 2){
+        if (Input.GetButtonDown("Jump") && jumpCounter < 2){
             phys.Jump();
+            y = 1;
             jumpCounter++;
         }
         phys.Run(direction);
-        anim.FlipDirection();
         anim.UpdateConditions();
+        anim.FlipDirection();
     }
 }

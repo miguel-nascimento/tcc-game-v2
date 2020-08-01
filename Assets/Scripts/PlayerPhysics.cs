@@ -26,6 +26,7 @@ public class PlayerPhysics : MonoBehaviour
         rb2d.velocity = Vector2.Lerp(rb2d.velocity, (new Vector2(direction.x * Speed, rb2d.velocity.y)), wallJumpLerp * Time.deltaTime);
     }
 
+    // TODO -> Reimplement a better jumping system.
     public void Jump()
     {
         rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
@@ -38,6 +39,12 @@ public class PlayerPhysics : MonoBehaviour
     public void UpdateGrounded()
     {
         isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
-        if (isGrounded) player.jumpCounter = 0;
+        if (isGrounded) {
+            player.jumpCounter = 0;
+            player.y = 0;
+        }
     }
 }
+
+
+

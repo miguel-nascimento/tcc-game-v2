@@ -33,6 +33,7 @@ public class PlayerAnimation : MonoBehaviour
         JumpingUpdate();
         GroundUpdate();
         JumpCounterUpdate();
+        anim.SetFloat("y", player.y);
     }
 
     public void FlipDirection()

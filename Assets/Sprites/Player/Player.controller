@@ -473,6 +473,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: y
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: BelowDistance
     m_Type: 1
     m_DefaultFloat: 0
@@ -847,17 +853,14 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: isJumping
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: isJumping
+    m_ConditionEvent: isMovingInHorizontal
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: JumpCounter
     m_EventTreshold: 2
-  - m_ConditionMode: 1
-    m_ConditionEvent: isMovingInHorizontal
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1997234268642108427}
   m_Solo: 0
