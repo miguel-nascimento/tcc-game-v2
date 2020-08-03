@@ -41,7 +41,6 @@ public class PlayerPhysics : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
         if (isGrounded) {
             player.jumpCounter = 0;
-            player.y = 0;
         }
     }
 }

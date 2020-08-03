@@ -23,19 +23,19 @@ AnimatorStateMachine:
     m_Position: {x: 350, y: 310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1084915476667295593}
-    m_Position: {x: 490, y: 110, z: 0}
+    m_Position: {x: 480, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4250728143875826471}
-    m_Position: {x: 700, y: 330, z: 0}
+    m_Position: {x: 650, y: 310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2132952226392575824}
     m_Position: {x: 480, y: -250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1997234268642108427}
-    m_Position: {x: 440, y: -140, z: 0}
+    m_Position: {x: 470, y: -140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8160815718381993020}
-    m_Position: {x: 480, y: -20, z: 0}
+    m_Position: {x: 480, y: -10, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 796387652002818105}
@@ -760,9 +760,6 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isMovingInVertical
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: isGrounded
     m_EventTreshold: 0
