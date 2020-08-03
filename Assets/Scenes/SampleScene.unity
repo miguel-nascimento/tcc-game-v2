@@ -315,7 +315,7 @@ MonoBehaviour:
   wallJumpLerp: 5
   jumpForce: 5
   isGrounded: 0
-  collisionRadius: 0.25
+  collisionRadius: 0.01
   bottomOffset: {x: 0, y: 0}
   rightOffset: {x: 0, y: 0}
   leftOffset: {x: 0, y: 0}
@@ -6495,7 +6495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64827fc4a3f3cf346b863a55c87f4d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
 --- !u!1 &1820187334
 GameObject:
   m_ObjectHideFlags: 0
