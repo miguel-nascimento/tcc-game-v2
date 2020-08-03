@@ -5660,7 +5660,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279489844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: -4.11, z: 0}
+  m_LocalPosition: {x: 0, y: -4.11, z: 0}
   m_LocalScale: {x: 5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1773297455}
@@ -6153,8 +6153,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020562562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.73, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 1631210356}
   m_Father: {fileID: 1773297455}
@@ -6312,7 +6312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631210355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: -4.11, z: 0}
+  m_LocalPosition: {x: -8.73, y: -4.11, z: 0}
   m_LocalScale: {x: 5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1020562563}
@@ -6356,7 +6356,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1c96fb357a11d444a87d4b7ea8e3f06a, type: 3}
   m_Color: {r: 0.9716981, g: 0.33459416, b: 0.33459416, a: 1}
   m_FlipX: 0
@@ -6393,7 +6393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753739853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: -4.11, z: 0}
+  m_LocalPosition: {x: 0, y: -4.11, z: 0}
   m_LocalScale: {x: 5.1, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 1773297455}
@@ -6474,7 +6474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773297454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.28, y: 6.12, z: 7.067786}
+  m_LocalPosition: {x: -8.74, y: 5.64, z: 7.067786}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 279489845}
@@ -6492,7 +6492,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1773297454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 900af429c8c57684c99009fbca5836e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 64827fc4a3f3cf346b863a55c87f4d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 0}
