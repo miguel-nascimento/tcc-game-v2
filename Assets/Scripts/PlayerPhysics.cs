@@ -14,6 +14,7 @@ public class PlayerPhysics : MonoBehaviour
     public float collisionRadius = 0.25f;
     public Vector2 bottomOffset, rightOffset, leftOffset;
     public LayerMask groundLayer;
+    public bool onRightWall, onLeftWall;
 
     public void Start()
     {
@@ -34,14 +35,19 @@ public class PlayerPhysics : MonoBehaviour
 
     public void UpdateCollisions(){
         UpdateGrounded();
+        UpdateWallColisions();
     }
 
     public void UpdateGrounded()
     {
         isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
-        if (isGrounded) {
-            player.jumpCounter = 0;
-        }
+        if (isGrounded) player.jumpCounter = 0;
+    }
+    public void UpdateWallColisions()
+    {
+        onRightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer);
+        onLeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
+        if (onRightWall || onLeftWall) player.jumpCounter = 0;
     }
 }
 
