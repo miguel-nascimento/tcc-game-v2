@@ -25,7 +25,6 @@ public class PlayerMovement : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
         Vector2 direction = new Vector2(x, y);
-    
         phys.UpdateCollisions();
         if (Input.GetButtonDown("Jump") && jumpCounter < 2){
             phys.Jump();

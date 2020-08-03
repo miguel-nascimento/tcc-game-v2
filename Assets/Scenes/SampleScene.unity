@@ -313,7 +313,7 @@ MonoBehaviour:
   rb2d: {fileID: 0}
   Speed: 5
   wallJumpLerp: 5
-  jumpForce: 5
+  jumpForce: 2
   isGrounded: 0
   collisionRadius: 0.01
   bottomOffset: {x: 0, y: 0}

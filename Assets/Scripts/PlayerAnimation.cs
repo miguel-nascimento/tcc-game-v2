@@ -34,7 +34,7 @@ public class PlayerAnimation : MonoBehaviour
         JumpingUpdate();
         GroundUpdate();
         JumpCounterUpdate();
-        anim.SetFloat("y", player.y);
+        anim.SetFloat("yVel", phys.rb2d.velocity.y / phys.jumpForce);
     }
 
     public void FlipDirection()
