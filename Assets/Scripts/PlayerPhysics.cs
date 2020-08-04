@@ -11,10 +11,10 @@ public class PlayerPhysics : MonoBehaviour
     public float wallJumpLerp;
     public float jumpForce;
     public bool isGrounded;
-    public float collisionRadius = 0.25f;
+    public float collisionRadius = 0.01f;
     public Vector2 bottomOffset, rightOffset, leftOffset;
     public LayerMask groundLayer;
-    public bool onRightWall, onLeftWall;
+    public bool rightWall, leftWall;
 
     public void Start()
     {
@@ -41,15 +41,26 @@ public class PlayerPhysics : MonoBehaviour
     public void UpdateGrounded()
     {
         isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
-        if (isGrounded) player.jumpCounter = 0;
+        if (isGrounded){
+            player.jumpCounter = 0;
+        }
     }
+
     public void UpdateWallColisions()
     {
-        onRightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer);
-        onLeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
-        if (onRightWall || onLeftWall) player.jumpCounter = 0;
+        rightWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(0.4f, 0.25f), 0.15f, groundLayer);
+        leftWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(-0.4f, 0.25f), 0.15f, groundLayer);
+        if (leftWall || rightWall)
+        {
+            player.jumpCounter = 0;
+        }
+    }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere((Vector2) transform.position + bottomOffset, collisionRadius);
+        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(0.4f, 0.25f), 0.15f);
+        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(-0.4f, 0.25f), 0.15f);
     }
 }
-
-
-

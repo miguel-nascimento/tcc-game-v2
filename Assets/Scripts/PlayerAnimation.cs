@@ -34,6 +34,7 @@ public class PlayerAnimation : MonoBehaviour
         JumpingUpdate();
         GroundUpdate();
         JumpCounterUpdate();
+        onWallUpdate();
         anim.SetFloat("yVel", phys.rb2d.velocity.y / phys.jumpForce);
     }
 
@@ -119,5 +120,9 @@ public class PlayerAnimation : MonoBehaviour
     private void JumpCounterUpdate()
     {
         anim.SetInteger("JumpCounter", player.jumpCounter);
+    }
+    
+    private void onWallUpdate(){
+        anim.SetBool("onWall", phys.leftWall || phys.rightWall);
     }
 }
