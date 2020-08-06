@@ -123,6 +123,6 @@ public class PlayerAnimation : MonoBehaviour
     }
     
     private void onWallUpdate(){
-        anim.SetBool("onWall", phys.leftWall || phys.rightWall);
+        anim.SetBool("onWall", phys.onWall);
     }
 }

@@ -14,7 +14,7 @@ public class PlayerPhysics : MonoBehaviour
     public float collisionRadius = 0.01f;
     public Vector2 bottomOffset, rightOffset, leftOffset;
     public LayerMask groundLayer;
-    public bool rightWall, leftWall;
+    public bool onWall, rightWall, leftWall;
 
     public void Start()
     {
@@ -41,6 +41,7 @@ public class PlayerPhysics : MonoBehaviour
     public void UpdateGrounded()
     {
         isGrounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
+        // isGrounded = Physics2D.OverlapCapsule((Vector2)transform.position, new Vector2(1.0f, 1.0f), );
         if (isGrounded){
             player.jumpCounter = 0;
         }
@@ -48,9 +49,10 @@ public class PlayerPhysics : MonoBehaviour
 
     public void UpdateWallColisions()
     {
-        rightWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(0.4f, 0.25f), 0.15f, groundLayer);
-        leftWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(-0.4f, 0.25f), 0.15f, groundLayer);
-        if (leftWall || rightWall)
+        rightWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(0.4f, 0.70f), 0.015f, groundLayer);
+        leftWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(-0.25f, 0.70f), 0.015f, groundLayer);
+        onWall = rightWall || leftWall;
+        if (onWall)
         {
             player.jumpCounter = 0;
         }
@@ -60,7 +62,7 @@ public class PlayerPhysics : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere((Vector2) transform.position + bottomOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(0.4f, 0.25f), 0.15f);
-        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(-0.4f, 0.25f), 0.15f);
+        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(0.4f, 0.70f), 0.015f);
+        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(-0.25f, 0.70f), 0.015f);
     }
 }

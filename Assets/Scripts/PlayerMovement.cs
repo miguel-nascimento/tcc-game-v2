@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
             phys.Jump();
             jumpCounter++;
         }
+
         phys.Run(direction);
         anim.UpdateConditions();
         anim.FlipDirection();
