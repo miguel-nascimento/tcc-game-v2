@@ -125,4 +125,5 @@ public class PlayerAnimation : MonoBehaviour
     private void onWallUpdate(){
         anim.SetBool("onWall", phys.onWall);
     }
+
 }

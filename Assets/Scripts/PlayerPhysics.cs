@@ -49,8 +49,8 @@ public class PlayerPhysics : MonoBehaviour
 
     public void UpdateWallColisions()
     {
-        rightWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(0.4f, 0.70f), 0.015f, groundLayer);
-        leftWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(-0.25f, 0.70f), 0.015f, groundLayer);
+        rightWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(0.392f, 0.70f), 0.001f, groundLayer);
+        leftWall = Physics2D.OverlapCircle((Vector2)transform.position + new Vector2(-0.25f, 0.70f), 0.001f, groundLayer);
         onWall = rightWall || leftWall;
         if (onWall)
         {
@@ -62,7 +62,7 @@ public class PlayerPhysics : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere((Vector2) transform.position + bottomOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(0.4f, 0.70f), 0.015f);
-        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(-0.25f, 0.70f), 0.015f);
+        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(0.392f, 0.70f), 0.001f);
+        Gizmos.DrawWireSphere((Vector2) transform.position + new Vector2(-0.25f, 0.70f), 0.001f);
     }
 }
