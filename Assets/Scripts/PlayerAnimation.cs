@@ -24,7 +24,7 @@ public class PlayerAnimation : MonoBehaviour
         player = GetComponentInChildren<PlayerMovement>();
         phys = GetComponentInChildren<PlayerPhysics>();
     }
-    
+
     public void UpdateConditions()
     {
         VelocityUpdate();
@@ -40,10 +40,10 @@ public class PlayerAnimation : MonoBehaviour
 
     public void FlipDirection()
     {
-        if (player.x > 0) {
-            spriteRenderer.flipX = false;
-        } else if (player.x < 0) {
-            spriteRenderer.flipX = true;
+        if ((player.x > 0 && player.direction == -1) || (player.x < 0 && player.direction == 1))
+        {
+            player.direction *= -1;
+            transform.Rotate(0f, 180f, 0);
         }
     }
 
@@ -125,5 +125,4 @@ public class PlayerAnimation : MonoBehaviour
     private void onWallUpdate(){
         anim.SetBool("onWall", phys.onWall);
     }
-
 }
