@@ -6,7 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     PlayerPhysics phys;
     PlayerAnimation anim;
-    
+
+    private PlayerController controller;
+    private Vector2 movement;
     public float x;
     public float y;
     public int jumpCounter;
@@ -19,20 +21,39 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponentInChildren<PlayerAnimation>();
     }
 
+    void Awake()
+    {
+        controller = new PlayerController();
+    }
+    void OnEnable()
+    {
+        controller.Enable();
+    }
+
+    void OnDisable()
+    {
+        controller.Disable();
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
-        x = Input.GetAxis("Horizontal");
-        y = Input.GetAxis("Vertical");
-        Vector2 direction = new Vector2(x, y);
+        movement = controller.Player.Movement.ReadValue<Vector2>();
+        x = movement.x;
+        y = movement.y;
+
         phys.UpdateCollisions();
-        if (Input.GetButtonDown("Jump") && jumpCounter < 2){
+   
+        controller.Player.Jump.performed += _ => Jump();
+        phys.Move(x);
+        anim.UpdateConditions();
+        anim.FlipDirection();
+    }
+
+    void Jump(){
+        if(jumpCounter < 2){
             phys.Jump();
             jumpCounter++;
         }
-
-        phys.Run(direction);
-        anim.UpdateConditions();
-        anim.FlipDirection();
     }
 }

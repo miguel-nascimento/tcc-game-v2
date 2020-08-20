@@ -8,10 +8,9 @@ public class PlayerPhysics : MonoBehaviour
     public Rigidbody2D rb2d;
     PlayerMovement player;
     public float Speed;
-    public float wallJumpLerp;
     public float jumpForce;
     public bool isGrounded;
-    public float collisionRadius = 0.02f;
+    private float collisionRadius = 0.02f;
     public LayerMask groundLayer;
     public bool onWall;
     public Transform groundCheck, wallCheck;
@@ -22,9 +21,11 @@ public class PlayerPhysics : MonoBehaviour
         player = GetComponentInChildren<PlayerMovement>();
     }
 
-    public void Run(Vector2 direction)
+    public void Move(float direction)
     {
-        rb2d.velocity = Vector2.Lerp(rb2d.velocity, (new Vector2(direction.x * Speed, rb2d.velocity.y)), wallJumpLerp * Time.deltaTime);
+        Vector3 currentPosition = transform.position;
+        currentPosition.x += direction * Speed * Time.deltaTime;
+        transform.position = currentPosition;
     }
 
     // TODO -> Reimplement a better jumping system.

@@ -296,11 +296,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
-  Speed: 5
-  wallJumpLerp: 5
-  jumpForce: 5
+  Speed: 3
+  jumpForce: 3
   isGrounded: 0
-  collisionRadius: 0.01
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
