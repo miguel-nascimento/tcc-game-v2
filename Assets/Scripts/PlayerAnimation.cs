@@ -73,7 +73,6 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-
     // TODO -> transfer isJumping bool to PlayerPhysics script.
     private void JumpingUpdate()
     {

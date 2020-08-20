@@ -12,11 +12,9 @@ public class PlayerPhysics : MonoBehaviour
     public float jumpForce;
     public bool isGrounded;
     public float collisionRadius = 0.02f;
-    public Vector2 bottomOffset, rightOffset, leftOffset;
     public LayerMask groundLayer;
     public bool onWall;
     public Transform groundCheck, wallCheck;
-    public bool isTouchingWall;
 
     public void Start()
     {
@@ -32,7 +30,7 @@ public class PlayerPhysics : MonoBehaviour
     // TODO -> Reimplement a better jumping system.
     public void Jump()
     {
-        rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
+        rb2d.AddForce(new Vector2(rb2d.velocity.x, jumpForce), ForceMode2D.Impulse);
     }
 
     public void UpdateCollisions(){
