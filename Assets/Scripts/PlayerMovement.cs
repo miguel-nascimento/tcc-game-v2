@@ -43,17 +43,9 @@ public class PlayerMovement : MonoBehaviour
         y = movement.y;
 
         phys.UpdateCollisions();
-   
-        controller.Player.Jump.performed += _ => Jump();
-        phys.Move(x);
-        anim.UpdateConditions();
-        anim.FlipDirection();
-    }
-
-    void Jump(){
-        if(jumpCounter < 2){
+        if (Input.GetButtonDown("Jump") && jumpCounter > 0){
             phys.Jump();
-            jumpCounter++;
+            jumpCounter--;
         }
     }
 }
