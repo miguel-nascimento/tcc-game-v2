@@ -7,6 +7,7 @@ public class PlayerPhysics : MonoBehaviour
     // Start is called before the first frame update
     public Rigidbody2D rb2d;
     PlayerMovement player;
+    PlayerAnimation anim;
     public float Speed;
     public float jumpForce;
     public bool isGrounded;
@@ -19,6 +20,7 @@ public class PlayerPhysics : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>(); 
         player = GetComponentInChildren<PlayerMovement>();
+        anim = GetComponentInChildren<PlayerAnimation>();
     }
 
     public void Move(float direction)
@@ -31,7 +33,8 @@ public class PlayerPhysics : MonoBehaviour
     // TODO -> Reimplement a better jumping system.
     public void Jump()
     {
-        rb2d.AddForce(new Vector2(rb2d.velocity.x, jumpForce), ForceMode2D.Impulse);
+        rb2d.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        anim.isJumping = true;
     }
 
     public void UpdateCollisions(){
@@ -53,6 +56,7 @@ public class PlayerPhysics : MonoBehaviour
                 if (!wasGrounded) //Acabou de pisar no chão
                 {
                     player.jumpCounter = 0;
+                    anim.isJumping = false;
                 }
             }
         }
