@@ -35,7 +35,7 @@ public class PlayerAnimation : MonoBehaviour
         GroundUpdate();
         JumpCounterUpdate();
         onWallUpdate();
-        anim.SetFloat("yVel", phys.rb2d.velocity.y / phys.jumpForce);
+        // anim.SetFloat("yVel", (phys.rb2d.velocity.y / phys.jumpForce) % phys.jumpForce);
     }
 
     public void FlipDirection()
@@ -76,14 +76,7 @@ public class PlayerAnimation : MonoBehaviour
     // TODO -> transfer isJumping bool to PlayerPhysics script.
     private void JumpingUpdate()
     {
-        if (player.y == 0)
-        {
-            isJumping = false;
-            anim.SetBool("isJumping", isJumping);
-        } else {
-            isJumping = true;
-            anim.SetBool("isJumping", isJumping);
-        }
+        anim.SetBool("isJumping", isJumping);
     }
 
     private void HoodUpdate()
