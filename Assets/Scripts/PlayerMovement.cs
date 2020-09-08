@@ -25,15 +25,10 @@ public class PlayerMovement : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
-
-        phys.UpdateCollisions();
-        if (Input.GetButtonDown("Jump") && jumpCounter > 0){
-
    
         if (Input.GetKeyDown("space") && jumpCounter < 2) {
             phys.Jump();
-            jumpCounter--;
-        }
+            jumpCounter++;
         }
         phys.UpdateCollisions();
         phys.Move(x);

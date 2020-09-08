@@ -55,12 +55,8 @@ public class PlayerPhysics : MonoBehaviour
                 isGrounded = true;
                 if (!wasGrounded) //Acabou de pisar no chão
                 {
-
-                    player.jumpCounter = 2;
-
                     player.jumpCounter = 0;
                     anim.isJumping = false;
-
                 }
             }
         }
@@ -68,10 +64,9 @@ public class PlayerPhysics : MonoBehaviour
 
     public void UpdateWallColisions()
     {
-        //colocar uma função para que toda vez que onWall = true, o player troque de direção, e 
         onWall = Physics2D.OverlapCircle(wallCheck.position, collisionRadius, groundLayer);
         if (onWall){
-            player.jumpCounter = 2;
+            player.jumpCounter = 0;
         }
     }
 }
