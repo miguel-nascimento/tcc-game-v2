@@ -33,7 +33,7 @@ public class PlayerPhysics : MonoBehaviour
     // TODO -> Reimplement a better jumping system.
     public void Jump()
     {
-        rb2d.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        rb2d.velocity = Vector2.up * jumpForce;
         anim.isJumping = true;
     }
 
