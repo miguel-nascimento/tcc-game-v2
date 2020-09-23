@@ -27,7 +27,6 @@ public class PlayerAnimation : MonoBehaviour
 
     public void UpdateConditions()
     {
-        VelocityUpdate();
         HorizontalUpdate();
         VerticalUpdate();
         HoodUpdate();
@@ -35,7 +34,6 @@ public class PlayerAnimation : MonoBehaviour
         GroundUpdate();
         JumpCounterUpdate();
         onWallUpdate();
-        // anim.SetFloat("yVel", (phys.rb2d.velocity.y / phys.jumpForce) % phys.jumpForce);
     }
 
     public void FlipDirection()
@@ -96,12 +94,6 @@ public class PlayerAnimation : MonoBehaviour
             isWithHood = false;
             anim.SetBool("isWithHood", isWithHood);
         }
-    }
-
-    private void VelocityUpdate()
-    {
-        anim.SetFloat("HorizontalVelocity", player.x);
-        anim.SetFloat("VerticalVelocity", player.y);
     }
 
     private void GroundUpdate()
