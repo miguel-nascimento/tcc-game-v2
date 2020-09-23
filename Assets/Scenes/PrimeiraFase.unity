@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -632,7 +632,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 216625664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1d4eaf47cdba134db0c761169fa4ff1, type: 3}
+  m_Script: {fileID: 11500000, guid: 28e1112570e47f34eb3cde1c1732eaea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 0
@@ -12329,7 +12329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1514166545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1d4eaf47cdba134db0c761169fa4ff1, type: 3}
+  m_Script: {fileID: 11500000, guid: 28e1112570e47f34eb3cde1c1732eaea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 0
@@ -12501,7 +12501,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1532544046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1d4eaf47cdba134db0c761169fa4ff1, type: 3}
+  m_Script: {fileID: 11500000, guid: 28e1112570e47f34eb3cde1c1732eaea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 0

@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
             jumpCounter++;
         }
         phys.UpdateCollisions();
-        phys.Move(x);
+        phys.Move(new Vector2(x, y));
         anim.UpdateConditions();
         anim.FlipDirection();
     }

@@ -23,16 +23,15 @@ public class PlayerPhysics : MonoBehaviour
         anim = GetComponentInChildren<PlayerAnimation>();
     }
 
-    public void Move(float direction)
+    public void Move(Vector2 direction)
     {
-        Vector3 currentPosition = transform.position;
-        currentPosition.x += direction * Speed * Time.deltaTime;
-        transform.position = currentPosition;
+        rb2d.velocity = new Vector2(direction.x * Speed, rb2d.velocity.y);
     }
 
     // TODO -> Reimplement a better jumping system.
     public void Jump()
     {
+        // rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         rb2d.velocity = Vector2.up * jumpForce;
         anim.isJumping = true;
     }
