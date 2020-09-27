@@ -27,6 +27,8 @@ public class PlayerAnimation : MonoBehaviour
 
     public void UpdateConditions()
     {
+        anim.SetFloat("xVel", phys.rb2d.velocity.x);
+        anim.SetFloat("yVel", phys.rb2d.velocity.y);
         HorizontalUpdate();
         VerticalUpdate();
         HoodUpdate();
@@ -34,6 +36,7 @@ public class PlayerAnimation : MonoBehaviour
         GroundUpdate();
         JumpCounterUpdate();
         onWallUpdate();
+        isFallingUpdate();
     }
 
     public void FlipDirection()
@@ -108,5 +111,13 @@ public class PlayerAnimation : MonoBehaviour
     
     private void onWallUpdate(){
         anim.SetBool("onWall", phys.onWall);
+    }
+
+    private void isFallingUpdate(){
+        if (phys.rb2d.velocity.y < 0){
+            anim.SetBool("isFalling", true);
+        } else {
+            anim.SetBool("isFalling", false);
+        }
     }
 }
