@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float y;
     public int jumpCounter;
     public int direction = 1;
+    public float life = 100;
 
     // Start is called before the first frame update
     void Start()
