@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public int jumpCounter;
     public int direction = 1;
     public float life = 100;
+    public float attackRange = 0.1f;
+
+    public bool canAttack;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,12 @@ public class PlayerMovement : MonoBehaviour
             phys.Jump();
             jumpCounter++;
         }
+
+        if (Input.GetKeyDown(KeyCode.Z)){
+            anim.AttackAnimation();
+            phys.AttackCollider();
+        }
+        
         phys.UpdateCollisions();
         phys.Move(new Vector2(x, y));
         anim.UpdateConditions();

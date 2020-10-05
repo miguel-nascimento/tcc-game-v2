@@ -8,13 +8,14 @@ public class PlayerPhysics : MonoBehaviour
     public Rigidbody2D rb2d;
     PlayerMovement player;
     PlayerAnimation anim;
+    
     public float Speed;
     public float jumpForce;
     public bool isGrounded;
     private float collisionRadius = 0.02f;
-    public LayerMask groundLayer;
+    public LayerMask groundLayer, enemyLayer;
     public bool onWall;
-    public Transform groundCheck, wallCheck;
+    public Transform groundCheck, wallCheck, hitBox;
 
     public void Start()
     {
@@ -67,5 +68,13 @@ public class PlayerPhysics : MonoBehaviour
         if (onWall){
             player.jumpCounter = 0;
         }
+    }
+
+    public void AttackCollider(){
+        Collider2D[] hitEnimies = Physics2D.OverlapCircleAll(hitBox.position, player.attackRange, enemyLayer);
+    }
+
+    void OnDrawGizmos(){
+        Gizmos.DrawWireSphere(hitBox.position, player.attackRange);
     }
 }

@@ -161,6 +161,8 @@ MonoBehaviour:
   jumpCounter: 0
   direction: 1
   life: 100
+  attackRange: 0.45
+  canAttack: 0
 --- !u!50 &7679848
 Rigidbody2D:
   serializedVersion: 4
@@ -265,6 +267,7 @@ Transform:
   m_Children:
   - {fileID: 839265547}
   - {fileID: 346148161}
+  - {fileID: 744071891}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -303,9 +306,13 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
   onWall: 0
   groundCheck: {fileID: 839265547}
   wallCheck: {fileID: 346148161}
+  hitBox: {fileID: 744071891}
 --- !u!114 &7679854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,6 +1259,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &744071890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744071891}
+  m_Layer: 0
+  m_Name: AttackHitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744071891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744071890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.366, y: 0.308, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7679851}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &839265546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,7 +1405,7 @@ GameObject:
   - component: {fileID: 896650323}
   - component: {fileID: 896650322}
   - component: {fileID: 896650324}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}

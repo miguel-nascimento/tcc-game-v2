@@ -120,4 +120,8 @@ public class PlayerAnimation : MonoBehaviour
             anim.SetBool("isFalling", false);
         }
     }
+
+    public void AttackAnimation(){
+        anim.SetTrigger("isAttacking");
+    }
 }
