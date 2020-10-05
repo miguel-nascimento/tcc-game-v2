@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     public bool canAttack;
 
+    public float damage = 20;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z)){
             anim.AttackAnimation();
             phys.AttackCollider();
+
         }
         
         phys.UpdateCollisions();

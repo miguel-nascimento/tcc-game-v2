@@ -163,6 +163,7 @@ MonoBehaviour:
   life: 100
   attackRange: 0.45
   canAttack: 0
+  damage: 20
 --- !u!50 &7679848
 Rigidbody2D:
   serializedVersion: 4
@@ -308,7 +309,7 @@ MonoBehaviour:
     m_Bits: 256
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   onWall: 0
   groundCheck: {fileID: 839265547}
   wallCheck: {fileID: 346148161}
@@ -640,9 +641,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 216625664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28e1112570e47f34eb3cde1c1732eaea, type: 3}
+  m_Script: {fileID: 11500000, guid: fd2b458a5d8b597478a5080af7d38659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
 --- !u!50 &216625671
 Rigidbody2D:
   serializedVersion: 4
@@ -1405,6 +1407,7 @@ GameObject:
   - component: {fileID: 896650323}
   - component: {fileID: 896650322}
   - component: {fileID: 896650324}
+  - component: {fileID: 896650325}
   m_Layer: 9
   m_Name: Slime
   m_TagString: Untagged
@@ -1556,6 +1559,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18777657, y: 0.6536441}
   m_EdgeRadius: 0
+--- !u!114 &896650325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896650318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbdafcc9d0e24d4aa0f71352c60bff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 80
 --- !u!1 &1011966047
 GameObject:
   m_ObjectHideFlags: 0
@@ -12561,9 +12577,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1514166545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28e1112570e47f34eb3cde1c1732eaea, type: 3}
+  m_Script: {fileID: 11500000, guid: fd2b458a5d8b597478a5080af7d38659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
 --- !u!50 &1514166551
 Rigidbody2D:
   serializedVersion: 4
@@ -12732,9 +12749,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1532544046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28e1112570e47f34eb3cde1c1732eaea, type: 3}
+  m_Script: {fileID: 11500000, guid: fd2b458a5d8b597478a5080af7d38659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
 --- !u!50 &1532544052
 Rigidbody2D:
   serializedVersion: 4
