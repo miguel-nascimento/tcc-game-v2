@@ -1,7 +1,6 @@
 ## Skellthia – Um jogo 2D criado na Unity.
 
-![Skellthia Logo](https://imgur.com/BRhTIVt)
-
+![Skellthia Logo](https://i.imgur.com/BRhTIVt.png)
 
 Bem vindo ao repositório de nosso jogo, criado por:
 
@@ -27,4 +26,4 @@ A Unity utiliza *C#* como sua linguagem de script, não foi díficil para nos ad
 Para a criação da tela inicial do jogo, e interface, o **Rafael** está utilizando o **Photoshop**, que já possuia experiência prévia.
 
 
-![Skellthia in-game screenshot](https://imgur.com/6KsZ5Um)
+![Skellthia in-game screenshot](https://i.imgur.com/6KsZ5Um.png)
