@@ -77,8 +77,4 @@ public class PlayerPhysics : MonoBehaviour
             Debug.Log("hit " + enemy.name);
         }
     }
-
-    void OnDrawGizmos(){
-        Gizmos.DrawWireSphere(hitBox.position, player.attackRange);
-    }
 }
