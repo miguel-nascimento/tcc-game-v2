@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 7679853}
   - component: {fileID: 7679854}
   - component: {fileID: 7679852}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ MonoBehaviour:
   y: 0
   jumpCounter: 0
   direction: 1
-  life: 100
+  Health: 100
   attackRange: 0.45
   canAttack: 0
   damage: 20
@@ -775,7 +775,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 896650321}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346148160
 GameObject:
@@ -786,7 +786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 346148161}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1270,7 +1270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 744071891}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AttackHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1300,7 +1300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839265547}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,6 +1408,7 @@ GameObject:
   - component: {fileID: 896650322}
   - component: {fileID: 896650324}
   - component: {fileID: 896650325}
+  - component: {fileID: 896650326}
   m_Layer: 9
   m_Name: Slime
   m_TagString: Untagged
@@ -1495,6 +1496,7 @@ Transform:
   m_LocalPosition: {x: 18.104, y: -6.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1051427212}
   - {fileID: 339836802}
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -1571,7 +1573,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdbdafcc9d0e24d4aa0f71352c60bff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damege: 40
   maxHealth: 80
+--- !u!114 &896650326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896650318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a701ac922e2775345a100856b6fabaa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 40
+  attackRange: 0.1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  Hitbox: {fileID: 1051427212}
 --- !u!1 &1011966047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,11 +1699,41 @@ Transform:
   m_GameObject: {fileID: 1020562562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.73, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: -0.9, y: 1, z: 1}
   m_Children:
   - {fileID: 1631210356}
   m_Father: {fileID: 1773297455}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1051427211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051427212}
+  m_Layer: 0
+  m_Name: SlimeAttackHitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1051427212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051427211}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.277, y: -0.031, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 896650321}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1209480476
 GameObject:
@@ -13163,6 +13214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773297455}
   - component: {fileID: 1773297456}
+  - component: {fileID: 1773297457}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -13199,6 +13251,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64827fc4a3f3cf346b863a55c87f4d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1773297457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773297454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900af429c8c57684c99009fbca5836e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 7679846}
+  bar: {fileID: 1020562563}
 --- !u!1 &1799302912
 GameObject:
   m_ObjectHideFlags: 0
