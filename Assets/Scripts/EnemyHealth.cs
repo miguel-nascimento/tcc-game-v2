@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float damege = 20;
     public float maxHealth = 80;
     private float currentHealth;
     void Start()
@@ -30,5 +31,8 @@ public class EnemyHealth : MonoBehaviour
         Debug.Log("ooh, i died");
         Destroy(gameObject);
         // TODO -> particle effects
+
     }
+
+
 }

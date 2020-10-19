@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float y;
     public int jumpCounter;
     public int direction = 1;
-    public float life = 100;
+    public float Health = -1;
     public float attackRange = 0.1f;
 
     public bool canAttack;
@@ -48,4 +48,18 @@ public class PlayerMovement : MonoBehaviour
         anim.UpdateConditions();
         anim.FlipDirection();
     }
+    public void TakeDamage(float damageTaken){
+        if (damageTaken >= Health){
+            Die();
+        }
+        Health -= damageTaken;
+    }
+
+    private void Die(){
+        Debug.Log("ooh, i died");
+        Destroy(gameObject);
+        // TODO -> particle effects
+
+    }
+    
 }

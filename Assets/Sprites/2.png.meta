@@ -487,11 +487,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 742
-        y: 0
+        y: 1
         width: 42
-        height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -507,12 +507,12 @@ TextureImporter:
       name: AtaqueComTouca4
       rect:
         serializedVersion: 2
-        x: 784
+        x: 783
         y: 4
         width: 49
         height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -532,8 +532,8 @@ TextureImporter:
         y: 5
         width: 32
         height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -637,8 +637,8 @@ TextureImporter:
         y: 0
         width: 42
         height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -658,8 +658,8 @@ TextureImporter:
         y: 4
         width: 49
         height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.18}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -679,8 +679,8 @@ TextureImporter:
         y: 5
         width: 32
         height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -700,8 +700,8 @@ TextureImporter:
         y: 8
         width: 34
         height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
