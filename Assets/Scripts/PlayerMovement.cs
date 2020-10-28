@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z)){
             anim.AttackAnimation();
             phys.AttackCollider();
-
         }
         
         phys.UpdateCollisions();
@@ -59,7 +58,5 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("ooh, i died");
         Destroy(gameObject);
         // TODO -> particle effects
-
     }
-    
 }
