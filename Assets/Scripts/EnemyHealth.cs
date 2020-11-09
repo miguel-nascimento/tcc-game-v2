@@ -8,16 +8,10 @@ public class EnemyHealth : MonoBehaviour
     public float damege = 20;
     public float maxHealth = 80;
     private float currentHealth;
+
     void Start()
     {
-        
         currentHealth = maxHealth;        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void TakeDamage(float damageTaken){
@@ -31,8 +25,5 @@ public class EnemyHealth : MonoBehaviour
         Debug.Log("ooh, i died");
         Destroy(gameObject);
         // TODO -> particle effects
-
     }
-
-
 }

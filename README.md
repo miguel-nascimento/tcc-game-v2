@@ -7,7 +7,7 @@ Bem vindo ao repositório de nosso jogo, criado por:
 - [Miguel Gomes do Nascimento](https://github.com/miguel-nascimento)
 - [Felipe Evaristo](https://github.com/Felipe-Evaristo)
 - [Roger Barreto](https://github.com/Roger-Barreto)
-- Rafael Ferrari
+- [Rafael Ferrari](https://www.linkedin.com/in/rafael-ferrari-design/)
 
 
 ### Motivação

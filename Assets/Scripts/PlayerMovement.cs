@@ -58,7 +58,5 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("ooh, i died");
         Destroy(gameObject);
         // TODO -> particle effects
-
     }
-    
 }

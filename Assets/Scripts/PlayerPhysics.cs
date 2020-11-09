@@ -35,6 +35,7 @@ public class PlayerPhysics : MonoBehaviour
         // rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         rb2d.velocity = Vector2.up * jumpForce;
         anim.isJumping = true;
+        anim.CreateDust();
     }
 
     public void UpdateCollisions(){
