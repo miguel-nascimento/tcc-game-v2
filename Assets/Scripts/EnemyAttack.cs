@@ -16,14 +16,13 @@ public class EnemyAttack : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+
+
+    void FixedUpdate(){
         Collider2D[] hitEnimies = Physics2D.OverlapCircleAll(Hitbox.position, attackRange, playerLayer);
         foreach(Collider2D enemy in hitEnimies){
             enemy.GetComponent<PlayerMovement>().TakeDamage(damage);
             Debug.Log("hit " + enemy.name);
-        
     }
 
     }
