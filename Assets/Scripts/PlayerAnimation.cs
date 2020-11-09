@@ -16,6 +16,7 @@ public class PlayerAnimation : MonoBehaviour
     public bool isMovingInVertical;
     public bool isWithHood;
     public bool isJumping;
+    public ParticleSystem dust;
 
     void Start()
     {
@@ -45,6 +46,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             player.direction *= -1;
             transform.Rotate(0f, 180f, 0);
+            CreateDust();
         }
     }
 
@@ -113,15 +115,29 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetBool("onWall", phys.onWall);
     }
 
-    private void isFallingUpdate(){
-        if (phys.rb2d.velocity.y < 0){
+    private void isFallingUpdate()
+    {
+        // float lastYPosition = player.transform.position.y;
+        // float currentYPosition = player.transform.position.y;
+
+        if (phys.rb2d.velocity.y < -2){
             anim.SetBool("isFalling", true);
         } else {
             anim.SetBool("isFalling", false);
         }
+        // lastYPosition = currentYPosition;
+        // Debug.Log("last: " + lastYPosition);
+        // Debug.Log("current: " + currentYPosition);
+
     }
 
-    public void AttackAnimation(){
+    public void AttackAnimation()
+    {
         anim.SetTrigger("isAttacking");
+    }
+
+    public void CreateDust()
+    {
+        dust.Play();
     }
 }
