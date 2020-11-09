@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float y;
     public int jumpCounter;
     public int direction = 1;
-    public float Health = -1;
+    public float Health = 1;
     public float attackRange = 0.1f;
 
     public bool canAttack;

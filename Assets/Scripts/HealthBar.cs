@@ -21,7 +21,7 @@ public class HealthBar : MonoBehaviour
 
 
     void Update(){
-        float NewHealth = Player.GetComponent<PlayerMovement>().Health/-100; 
+        float NewHealth = Player.GetComponent<PlayerMovement>().Health/100; 
         
         bar.localScale = new Vector3 (NewHealth,1f);
 
