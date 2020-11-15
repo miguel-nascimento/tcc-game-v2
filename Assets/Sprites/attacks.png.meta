@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 36dbd20db912a444595329c6e6c5cd42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1469547496591682847
+    second: ataque_com_touca_1
+  - first:
+      213: -1242285425621851522
+    second: ataque_com_touca_2
+  - first:
+      213: 7617606886698975220
+    second: ataque_com_touca_3
+  - first:
+      213: -7366189299289543316
+    second: ataque_com_touca_4
+  - first:
+      213: -1259900918629924903
+    second: ataque_com_touca_5
+  - first:
+      213: -6710590789868856986
+    second: ataque_com_touca_6
+  - first:
+      213: 9079739113627829181
+    second: ataque_com_touca_7
+  - first:
+      213: 1945345250854459057
+    second: ataque_sem_touca_1
+  - first:
+      213: -8346068374842146231
+    second: ataque_sem_touca_2
+  - first:
+      213: 4561559731660660800
+    second: ataque_sem_touca_3
+  - first:
+      213: -6525101252874081595
+    second: ataque_sem_touca_4
+  - first:
+      213: 6997376243643526431
+    second: ataque_sem_touca_5
+  - first:
+      213: 6204675865796442910
+    second: ataque_sem_touca_6
+  - first:
+      213: 6900981938562324293
+    second: ataque_sem_touca_7
+  - first:
+      213: 314557787626766444
+    second: ataque_correndo_1
+  - first:
+      213: 2382284182627451556
+    second: ataque_correndo_2
+  - first:
+      213: 9092720634437857375
+    second: ataque_correndo_3
+  - first:
+      213: -9093616918123592425
+    second: ataque_correndo_4
+  - first:
+      213: -3490903663682156470
+    second: ataque_correndo_5
+  - first:
+      213: 5569466668247381727
+    second: ataque_correndo_6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ataque_com_touca_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 9
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2961d765e1b9be0800000000000000
+      internalID: -1469547496591682847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_com_touca_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 9
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e722a20ccf382cee0800000000000000
+      internalID: -1242285425621851522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_com_touca_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fff2488a1d27b960800000000000000
+      internalID: 7617606886698975220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_com_touca_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 4
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d209b2cd906c990800000000000000
+      internalID: -7366189299289543316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_com_touca_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 5
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfffdc2acee38ee0800000000000000
+      internalID: -1259900918629924903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_com_touca_6
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 8
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669dbd81b313fd2a0800000000000000
+      internalID: -6710590789868856986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_com_touca_7
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 9
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3c1090e96b10e70800000000000000
+      internalID: 9079739113627829181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_sem_touca_1
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 9
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b65ca2e2314ffa10800000000000000
+      internalID: 1945345250854459057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_sem_touca_2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 9
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942896e480fcc2c80800000000000000
+      internalID: -8346068374842146231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_sem_touca_3
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 0
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0402c53686aed4f30800000000000000
+      internalID: 4561559731660660800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_sem_touca_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 4
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5caebf26bfe2275a0800000000000000
+      internalID: -6525101252874081595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_sem_touca_5
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 5
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d2122be9cab1160800000000000000
+      internalID: 6997376243643526431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_sem_touca_6
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 8
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b7c3f73df6b1650800000000000000
+      internalID: 6204675865796442910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_sem_touca_7
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 9
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547d469928635cf50800000000000000
+      internalID: 6900981938562324293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_correndo_1
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 8
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6083d824a88d5400800000000000000
+      internalID: 314557787626766444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_correndo_2
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a28a8b97d29f0120800000000000000
+      internalID: 2382284182627451556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_correndo_3
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 4
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f507881ed35df2e70800000000000000
+      internalID: 9092720634437857375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_correndo_4
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 5
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715c2cfc79bfcc180800000000000000
+      internalID: -9093616918123592425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_correndo_5
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 7
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a488d1d0d91dd8fc0800000000000000
+      internalID: -3490903663682156470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque_correndo_6
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 8
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6734d2d68ba4d40800000000000000
+      internalID: 5569466668247381727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
