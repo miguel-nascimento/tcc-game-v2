@@ -46,7 +46,10 @@ public class PlayerAnimation : MonoBehaviour
         {
             player.direction *= -1;
             transform.Rotate(0f, 180f, 0);
-            CreateDust();
+            if (!isJumping)
+            {
+                CreateDust();
+            }
         }
     }
 
