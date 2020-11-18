@@ -10,8 +10,6 @@ public class PlayerAnimation : MonoBehaviour
     SpriteRenderer spriteRenderer;
     PlayerMovement player;
     PlayerPhysics phys;
-    public bool isRunning;
-    public bool isMoving;
     public bool isMovingInHorizontal;
     public bool isMovingInVertical;
     public bool isWithHood;
