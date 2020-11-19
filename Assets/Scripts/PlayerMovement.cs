@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     PlayerPhysics phys;
     PlayerAnimation anim;
-
+    PlayerAudioManager audioManager;
     public float x;
     public float y;
     public int jumpCounter;
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         phys = GetComponentInParent<PlayerPhysics>();
         anim = GetComponentInChildren<PlayerAnimation>();
+        audioManager = GetComponentInChildren<PlayerAudioManager>();
     }
 
     // Update is called once per frame

@@ -8,6 +8,7 @@ public class PlayerPhysics : MonoBehaviour
     public Rigidbody2D rb2d;
     PlayerMovement player;
     PlayerAnimation anim;
+    PlayerAudioManager audioManager;
     
     public float Speed;
     public float jumpForce;
@@ -22,6 +23,7 @@ public class PlayerPhysics : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>(); 
         player = GetComponentInChildren<PlayerMovement>();
         anim = GetComponentInChildren<PlayerAnimation>();
+        audioManager = GetComponentInChildren<PlayerAudioManager>();
     }
 
     public void Move(Vector2 direction)
@@ -73,6 +75,12 @@ public class PlayerPhysics : MonoBehaviour
 
     public void AttackCollider(){
         Collider2D[] hitEnimies = Physics2D.OverlapCircleAll(hitBox.position, player.attackRange, enemyLayer);
+        if (hitEnimies.Length == 0)
+        {
+            audioManager.playAirHit();
+        } else {
+            audioManager.playEnemyHit();
+        }
         foreach(Collider2D enemy in hitEnimies){
             enemy.GetComponent<EnemyHealth>().TakeDamage(player.damage);
             Debug.Log("hit " + enemy.name);
