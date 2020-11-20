@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject resumeButton;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +30,8 @@ public class PauseScript : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(resumeButton);
     }
 
     public void Pause()
