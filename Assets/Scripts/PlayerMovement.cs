@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerPhysics phys;
     PlayerAnimation anim;
     PlayerAudioManager audioManager;
+    GameOver gameOver;
     public float x;
     public float y;
     public int jumpCounter;
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         phys = GetComponentInParent<PlayerPhysics>();
         anim = GetComponentInChildren<PlayerAnimation>();
         audioManager = GetComponentInChildren<PlayerAudioManager>();
+        gameOver = GetComponent<GameOver>();
     }
 
     // Update is called once per frame
@@ -57,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Die(){
         Debug.Log("ooh, i died");
+        gameOver.GameOverEvent();
         Destroy(gameObject);
         // TODO -> particle effects
     }
