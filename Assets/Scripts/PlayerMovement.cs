@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject respawnPoint;
     public HealthBar healthBar;
 
+    GameObject bossObject;
+    Boss boss;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
         audioManager = GetComponentInChildren<PlayerAudioManager>();
         gameOver = GetComponent<GameOver>();
         healthBar.SetMaxHealth(health);
+        bossObject = GameObject.FindGameObjectWithTag("Boss");
+        boss = bossObject.GetComponent<Boss>();
     }
 
     // Update is called once per frame
@@ -82,5 +86,11 @@ public class PlayerMovement : MonoBehaviour
         // CINEMACHINE STOP FOLLOWING!
         Destroy(gameObject);
         // TODO -> particle effects
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log("ok");
+        boss.On();
     }
 }

@@ -6,7 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     // Start is called before the first frame update
     public float maxHealth;
-    private float currentHealth;
+    public float currentHealth;
     public ParticleSystem blood;
 
     void Start()

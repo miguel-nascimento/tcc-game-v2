@@ -6,12 +6,10 @@ public class Boss : MonoBehaviour
 {
     // Start is called before the first frame update
     public float attackDamage;
-    public bool isAngry;
     public LayerMask playerLayer;
     public Transform hitBox;
     public Transform player;
     public float attackRange;
-    private float currentHealth;
     public bool isFlipped = false;
     public ParticleSystem dust_1;
     public ParticleSystem dust_2;
@@ -20,8 +18,20 @@ public class Boss : MonoBehaviour
     public AudioSource attack2;
     public AudioSource attack3;
     public AudioSource growl;
-
-
+    public AudioSource soundtrack;
+    Animator animator;
+    public float speed;
+    float health;
+    SoundController soundController;
+    public void Start()
+    {
+        animator = GetComponent<Animator>();
+        GameObject soundObj = GameObject.FindGameObjectWithTag("SoundController");
+        soundController = soundObj.GetComponent<SoundController>();
+        float health = GetComponent<EnemyHealth>().currentHealth;
+        growl.volume = 0.5f;
+        soundtrack.volume = 0.6f;
+    }
     public void Attack() 
     {
         Collider2D colliderHit = Physics2D.OverlapCircle(hitBox.position, attackRange, playerLayer);
@@ -29,6 +39,16 @@ public class Boss : MonoBehaviour
         if (colliderHit != null)
         {
             colliderHit.GetComponent<PlayerMovement>().TakeDamage(attackDamage);
+        }
+    }
+
+    public void Update()
+    {
+        if (health <= 200)
+        {
+            growl.Play();
+            speed = 2.7f;
+            attackRange = 1.65f;
         }
     }
 
@@ -82,5 +102,14 @@ public class Boss : MonoBehaviour
         {
             attack3.Play();
         }
+    }
+
+    public void On()
+    {
+        Debug.Log("hello from boss!");
+        soundController.StopBGM();
+        growl.Play();
+        soundtrack.Play();
+        animator.SetTrigger("EventTrigger");
     }
 }

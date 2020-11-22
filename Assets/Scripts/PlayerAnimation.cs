@@ -24,8 +24,6 @@ public class PlayerAnimation : MonoBehaviour
         anim = GetComponent<Animator>(); 
         player = GetComponentInChildren<PlayerMovement>();
         phys = GetComponentInChildren<PlayerPhysics>();
-        matWhite = Resources.Load("MatWhite", typeof(Material)) as Material;
-        matDefault = spriteRenderer.material;
     }
 
     public void UpdateConditions()

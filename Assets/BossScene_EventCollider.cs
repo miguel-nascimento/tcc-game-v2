@@ -5,9 +5,12 @@ using UnityEngine;
 public class BossScene_EventCollider : MonoBehaviour
 {
     // Start is called before the first frame update
+    GameObject bossObject;
+    Boss boss;
     void Start()
     {
-        
+        bossObject = GameObject.FindGameObjectWithTag("Boss");
+        boss = bossObject.GetComponent<Boss>();
     }
 
     // Update is called once per frame

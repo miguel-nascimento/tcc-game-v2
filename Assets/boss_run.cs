@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class boss_run : StateMachineBehaviour
 {
-    public float speed;
     Transform player;
     Rigidbody2D rb2d;
     Boss boss;
@@ -22,7 +21,7 @@ public class boss_run : StateMachineBehaviour
     {
         boss.LookAtPlayer();
         Vector2 target = new Vector2(player.position.x, rb2d.position.y);
-        Vector2 newPos = Vector2.MoveTowards(rb2d.position, target, speed * Time.fixedDeltaTime);
+        Vector2 newPos = Vector2.MoveTowards(rb2d.position, target, boss.speed * Time.fixedDeltaTime);
         rb2d.MovePosition(newPos);
         boss.dustPlay();
         if (Vector2.Distance(player.position, rb2d.position) <= boss.attackRange)
