@@ -84,13 +84,16 @@ public class PlayerMovement : MonoBehaviour
         cam.Follow = null;
         gameOver.GameOverEvent();
         // CINEMACHINE STOP FOLLOWING!
-        Destroy(gameObject);
+        Destroy(this);
         // TODO -> particle effects
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("ok");
-        boss.On();
+        if (collider.gameObject.name == "Boss Scene event collider")
+        {
+            Debug.Log("ok");
+            boss.On();
+        }
     }
 }
