@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 162781164}
+  cam: {fileID: 0}
   x: 0
   y: 0
   jumpCounter: 0

@@ -21,7 +21,7 @@ public class EnemyHealth : MonoBehaviour
     }
 
     private void Die(){
-        Debug.Log("ooh, i died");
+        Debug.Log("ooh, enemy died");
         Destroy(gameObject);
         // TODO -> particle effects
     }

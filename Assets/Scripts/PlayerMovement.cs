@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     PlayerAnimation anim;
     PlayerAudioManager audioManager;
     public GameOver gameOver;
+    public CinemachineVirtualCameraBase cam;
+
     public float x;
     public float y;
     public int jumpCounter;
@@ -71,9 +74,10 @@ public class PlayerMovement : MonoBehaviour
         healthBar.SetHealth(health);
     }
 
-    private void Die()
+    public void Die()
     {
         Debug.Log("ooh, i died");
+        cam.Follow = null;
         gameOver.GameOverEvent();
         // CINEMACHINE STOP FOLLOWING!
         Destroy(gameObject);
