@@ -15,6 +15,8 @@ public class PlayerAnimation : MonoBehaviour
     public bool isWithHood;
     public bool isJumping;
     public ParticleSystem dust;
+    public Material matWhite;
+    public Material matDefault;
 
     void Start()
     {
@@ -22,6 +24,8 @@ public class PlayerAnimation : MonoBehaviour
         anim = GetComponent<Animator>(); 
         player = GetComponentInChildren<PlayerMovement>();
         phys = GetComponentInChildren<PlayerPhysics>();
+        matWhite = Resources.Load("MatWhite", typeof(Material)) as Material;
+        matDefault = spriteRenderer.material;
     }
 
     public void UpdateConditions()
@@ -141,4 +145,14 @@ public class PlayerAnimation : MonoBehaviour
     {
         dust.Play();
     }
+
+    public void ResetMaterial()
+    {
+        spriteRenderer.material = matDefault;
+    }
+    public void WhiteFlash()
+    {
+        spriteRenderer.material = matWhite;
+    }
+
 }

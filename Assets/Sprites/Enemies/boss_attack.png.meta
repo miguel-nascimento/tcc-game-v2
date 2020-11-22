@@ -1,55 +1,67 @@
 fileFormatVersion: 2
-guid: e446066284dd9844abbcd507c6ee799a
+guid: 48244523790040a4983faf2c10f0a18a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6821674149378790861
-    second: vilain-idle_0
+      213: 8320824912735345967
+    second: boss_attack_0
   - first:
-      213: -8209600969705161153
-    second: vilain-idle_1
+      213: -3975016362501032488
+    second: boss_attack_1
   - first:
-      213: 2081076571714539228
-    second: vilain-idle_2
+      213: -649678722289502472
+    second: boss_attack_2
   - first:
-      213: 1249282363698083928
-    second: vilain-idle_3
+      213: -514692836225630516
+    second: boss_attack_3
   - first:
-      213: 6938481799233556650
-    second: vilain-idle_4
+      213: 8958798872038287775
+    second: boss_attack_4
   - first:
-      213: 1310292522075477790
-    second: vilain-idle_5
+      213: -6231923874741604251
+    second: boss_attack_5
   - first:
-      213: 3015139464175006439
-    second: vilain-idle_6
+      213: -8865549860339745163
+    second: boss_attack_6
   - first:
-      213: -3508790173507482635
-    second: vilain-idle_7
+      213: -8914420688689861540
+    second: boss_attack_7
   - first:
-      213: 6760817419928299312
-    second: vilain-idle_0
+      213: -5432251087210907021
+    second: boss_attack_8
   - first:
-      213: -899462075376999170
-    second: vilain-idle_1
+      213: 8720169460745952810
+    second: boss_attack_9
   - first:
-      213: 1023383781292267269
-    second: vilain-idle_2
+      213: -8543162378098387668
+    second: boss_attack_0
   - first:
-      213: 2069302210775520319
-    second: vilain-idle_3
+      213: 2949522206255187780
+    second: boss_attack_1
   - first:
-      213: -2072616892944839196
-    second: vilain-idle_4
+      213: -6987325736845572108
+    second: boss_attack_2
   - first:
-      213: -3440797134107982686
-    second: vilain-idle_5
+      213: 893919496861038435
+    second: boss_attack_3
   - first:
-      213: -5513246468060448041
-    second: vilain-idle_6
+      213: -5276480844719880779
+    second: boss_attack_4
   - first:
-      213: 4757117520317303579
-    second: vilain-idle_7
+      213: 4968441600834350016
+    second: boss_attack_5
+  - first:
+      213: -6042113901537711775
+    second: boss_attack_6
+  - first:
+      213: 5962873642527215726
+    second: boss_attack_7
+  - first:
+      213: -6706883431912258254
+    second: boss_attack_8
+  - first:
+      213: -6778435397409969248
+    second: boss_attack_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vilain-idle_0
+      name: boss_attack_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 0
-        width: 35
-        height: 47
+        width: 37
+        height: 43
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03769128f9f33dd50800000000000000
-      internalID: 6760817419928299312
+      spriteID: c25d6faa417907980800000000000000
+      internalID: -8543162378098387668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vilain-idle_1
+      name: boss_attack_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 74
         y: 0
         width: 35
-        height: 46
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef4e73c02087483f0800000000000000
-      internalID: -899462075376999170
+      spriteID: 44787f0c1decee820800000000000000
+      internalID: 2949522206255187780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vilain-idle_2
+      name: boss_attack_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 126
         y: 0
-        width: 35
-        height: 46
+        width: 39
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50752d0802ac33e00800000000000000
-      internalID: 1023383781292267269
+      spriteID: 4f700654348080f90800000000000000
+      internalID: -6987325736845572108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vilain-idle_3
+      name: boss_attack_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 0
-        width: 35
-        height: 45
+        x: 205
+        y: 7
+        width: 16
+        height: 56
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f349436a563a7bc10800000000000000
-      internalID: 2069302210775520319
+      spriteID: 367b234db07d76c00800000000000000
+      internalID: 893919496861038435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vilain-idle_4
+      name: boss_attack_4
       rect:
         serializedVersion: 2
-        x: 140
-        y: 0
-        width: 35
-        height: 46
+        x: 230
+        y: 14
+        width: 48
+        height: 38
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ed8c84cae59c33e0800000000000000
-      internalID: -2072616892944839196
+      spriteID: 5b58152b0ac26c6b0800000000000000
+      internalID: -5276480844719880779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vilain-idle_5
+      name: boss_attack_5
       rect:
         serializedVersion: 2
-        x: 175
-        y: 0
-        width: 35
-        height: 46
+        x: 281
+        y: 10
+        width: 55
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a4cf459c35df30d0800000000000000
-      internalID: -3440797134107982686
+      spriteID: 0cb2101ef4373f440800000000000000
+      internalID: 4968441600834350016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vilain-idle_6
+      name: boss_attack_6
       rect:
         serializedVersion: 2
-        x: 210
+        x: 336
         y: 0
-        width: 35
-        height: 47
+        width: 53
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7da74183c830d73b0800000000000000
-      internalID: -5513246468060448041
+      spriteID: 16925664b69162ca0800000000000000
+      internalID: -6042113901537711775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vilain-idle_7
+      name: boss_attack_7
       rect:
         serializedVersion: 2
-        x: 245
+        x: 397
         y: 0
-        width: 35
-        height: 47
+        width: 48
+        height: 36
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,8 +308,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1bcc413e2da40240800000000000000
-      internalID: 4757117520317303579
+      spriteID: e60df573cf160c250800000000000000
+      internalID: 5962873642527215726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_attack_8
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0
+        width: 48
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235cae2ad0d5ce2a0800000000000000
+      internalID: -6706883431912258254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_attack_9
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 0
+        width: 35
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abe1747be82ee1a0800000000000000
+      internalID: -6778435397409969248
       vertices: []
       indices: 
       edges: []

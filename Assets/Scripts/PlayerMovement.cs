@@ -15,9 +15,11 @@ public class PlayerMovement : MonoBehaviour
     public float Health = 1;
     public float attackRange = 0.1f;
 
-    public bool canAttack;
+    public float cooldownTimer;
+    private float nextAttackTimer = 0;
 
     public float damage = 20;
+    public GameObject respawnPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -40,24 +42,35 @@ public class PlayerMovement : MonoBehaviour
             jumpCounter++;
         }
 
-        if (Input.GetKeyDown(KeyCode.Z)){
-            anim.AttackAnimation();
-            phys.AttackCollider();
+    
+        if (Input.GetKeyDown(KeyCode.Z) || (Input.GetKeyDown(KeyCode.J) || (Input.GetKeyDown(KeyCode.Mouse0))))
+        {
+            if(Time.time > nextAttackTimer)
+            {
+                anim.AttackAnimation();
+                phys.AttackCollider();
+                nextAttackTimer = Time.time + cooldownTimer;
+            }
         }
+            
         
         phys.UpdateCollisions();
         phys.Move(new Vector2(x, y));
         anim.UpdateConditions();
         anim.FlipDirection();
     }
-    public void TakeDamage(float damageTaken){
+    public void TakeDamage(float damageTaken)
+    {
         if (damageTaken >= Health){
             Die();
         }
+        anim.WhiteFlash();
+        Invoke("ResetMaterial", .1f);
         Health -= damageTaken;
     }
 
-    private void Die(){
+    private void Die()
+    {
         Debug.Log("ooh, i died");
         gameOver.GameOverEvent();
         Destroy(gameObject);
