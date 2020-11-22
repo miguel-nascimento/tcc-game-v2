@@ -1,25 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public PlayerMovement player;
-    public Transform bar;
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        player = GetComponent<PlayerMovement>();
-        bar = transform.Find("Bar");
-    }
+    public Slider slider;
 
-    void Update()
+    public void SetMaxHealth(float health)
     {
-        float NewHealth = player.Health/100; 
-        Debug.Log("NewHealth = " + NewHealth);
-        Debug.Log("PlayerHealth = " + player.Health);
-        bar.localScale = new Vector3 (NewHealth,1f);
+        slider.maxValue = health;
+        slider.value = health;
     }
+    public void SetHealth(float health)
+    {
+        slider.value = health;
+    }
+    
 }

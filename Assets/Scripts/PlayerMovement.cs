@@ -7,12 +7,12 @@ public class PlayerMovement : MonoBehaviour
     PlayerPhysics phys;
     PlayerAnimation anim;
     PlayerAudioManager audioManager;
-    GameOver gameOver;
+    public GameOver gameOver;
     public float x;
     public float y;
     public int jumpCounter;
     public int direction = 1;
-    public float Health = 1;
+    public float health = 100;
     public float attackRange = 0.1f;
 
     public float cooldownTimer;
@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float damage = 20;
     public GameObject respawnPoint;
+    public HealthBar healthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponentInChildren<PlayerAnimation>();
         audioManager = GetComponentInChildren<PlayerAudioManager>();
         gameOver = GetComponent<GameOver>();
+        healthBar.SetMaxHealth(health);
     }
 
     // Update is called once per frame
@@ -61,18 +63,19 @@ public class PlayerMovement : MonoBehaviour
     }
     public void TakeDamage(float damageTaken)
     {
-        if (damageTaken >= Health){
+        if (damageTaken >= health){
+            healthBar.SetHealth(0);
             Die();
         }
-        anim.WhiteFlash();
-        Invoke("ResetMaterial", .1f);
-        Health -= damageTaken;
+        health -= damageTaken;
+        healthBar.SetHealth(health);
     }
 
     private void Die()
     {
         Debug.Log("ooh, i died");
         gameOver.GameOverEvent();
+        // CINEMACHINE STOP FOLLOWING!
         Destroy(gameObject);
         // TODO -> particle effects
     }

@@ -145,14 +145,4 @@ public class PlayerAnimation : MonoBehaviour
     {
         dust.Play();
     }
-
-    public void ResetMaterial()
-    {
-        spriteRenderer.material = matDefault;
-    }
-    public void WhiteFlash()
-    {
-        spriteRenderer.material = matWhite;
-    }
-
 }
