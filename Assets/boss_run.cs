@@ -24,7 +24,7 @@ public class boss_run : StateMachineBehaviour
         boss.LookAtPlayer();
         Vector2 target = new Vector2(player.position.x, rb2d.position.y);
 
-        if (player.position.y >= -8.75 && (player.position.y <= -7.38))
+        if (player.position.y >= -8.75 && (player.position.y <= -5.883))
         {
             Vector2 newPos = Vector2.MoveTowards(rb2d.position, target, boss.speed * Time.fixedDeltaTime);
             if (player.position.x <=23.32 && (player.position.x >= 8.68))
