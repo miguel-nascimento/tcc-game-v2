@@ -22,11 +22,15 @@ public class boss_run : StateMachineBehaviour
         boss.LookAtPlayer();
         Vector2 target = new Vector2(player.position.x, rb2d.position.y);
         Vector2 newPos = Vector2.MoveTowards(rb2d.position, target, boss.speed * Time.fixedDeltaTime);
-        rb2d.MovePosition(newPos);
-        boss.dustPlay();
-        if (Vector2.Distance(player.position, rb2d.position) <= boss.attackRange)
+
+        if (player.position.y >= -8.75 && (player.position.y <= -7.38))
         {
-            animator.SetTrigger("Attack");
+            rb2d.MovePosition(newPos);
+            boss.dustPlay();
+            if (Vector2.Distance(player.position, rb2d.position) <= boss.attackRange)
+            {
+                animator.SetTrigger("Attack");
+            }
         }
     }
 

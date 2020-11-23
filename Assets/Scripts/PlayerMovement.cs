@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerAudioManager audioManager;
     public GameOver gameOver;
     public CinemachineVirtualCameraBase cam;
+    public CinemachineVirtualCameraBase bossCam;
 
     public float x;
     public float y;
@@ -94,6 +95,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("ok");
             boss.On();
+            cam.gameObject.SetActive(false);
+            bossCam.gameObject.SetActive(true);
         }
     }
 }

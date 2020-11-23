@@ -12,6 +12,11 @@ public class PlayerAudioManager : MonoBehaviour
 
     [SerializeField]
     private AudioSource enemyHit;
+
+    [SerializeField]
+    private AudioSource jumpSound;
+    [SerializeField]
+    private AudioSource landingSound;
     // Start is called before the first frame update
     public void playFootsteps()
     {
@@ -32,5 +37,18 @@ public class PlayerAudioManager : MonoBehaviour
         enemyHit.volume = Random.Range(0.05f,0.2f);
         enemyHit.pitch = Random.Range(1.50f,1.7f);
         enemyHit.Play();
+    }
+
+    public void playJump()
+    {
+        // jumpSound.volume = Random.Range(0.05f,0.2f);
+        // jumpSound.pitch = Random.Range(1.50f,1.7f);
+        jumpSound.Play();
+    }
+    public void playLanding()
+    {
+        // landingSound.volume = Random.Range(0.05f,0.2f);
+        // landingSound.pitch = Random.Range(1.50f,1.7f);
+        landingSound.Play();
     }
 }
