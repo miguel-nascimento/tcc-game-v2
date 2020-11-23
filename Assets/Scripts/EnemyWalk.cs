@@ -19,7 +19,6 @@ public class EnemyWalk : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         bc2d = GetComponent<BoxCollider2D>();
-
     }
 
     // Update is called once per frame

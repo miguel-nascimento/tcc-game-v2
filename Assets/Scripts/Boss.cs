@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class Boss : MonoBehaviour
     public float speed;
     float health;
     SoundController soundController;
+    int idChangeValue = 1;
+    public List<Transform> points;
+    public int nextID = 0;
+
     public void Start()
     {
         animator = GetComponent<Animator>();
@@ -113,5 +118,32 @@ public class Boss : MonoBehaviour
         growl.Play();
         soundtrack.Play();
         animator.SetTrigger("EventTrigger");
+    }
+
+    public void MoveToNextPoint()
+    {
+        Transform goalPoint = points[nextID];
+        
+        if(goalPoint.transform.position.x > transform.position.x)
+        {
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
+        else
+        {
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
+
+        transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
+
+        if(Vector2.Distance(transform.position, goalPoint.position) < 1f)
+        {
+            if(nextID == points.Count - 1)
+                idChangeValue = -1;
+            
+            if (nextID == 0)
+                idChangeValue = 1;
+
+            nextID += idChangeValue;
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die(){
         Debug.Log("ooh, enemy died");
+        // SceneManager.LoadScene("Creditos");
         Destroy(gameObject);
         // TODO -> particle effects
     }

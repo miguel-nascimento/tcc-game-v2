@@ -18,20 +18,22 @@ public class Crystal : MonoBehaviour
     }
 
     public void TakeDamage(float damageTaken){
+        Debug.Log("hi from crystal!");
+        Debug.Log(currentHealth);
         if (damageTaken >= currentHealth){
             blood.Play();
             Die();
         }
         currentHealth -= damageTaken;
-
-        anim.SetTrigger("IsDestroy");
-        
+        int hit = 0;
+        hit++;
+        anim.SetInteger("hit", hit);
         
         blood.Play();
     }
 
     private void Die(){
-        Debug.Log("ooh, enemy died");
+        Debug.Log("ooh, cristal died");
         Destroy(gameObject);
         // TODO -> particle effects
     }
