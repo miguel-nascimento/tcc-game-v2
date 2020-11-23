@@ -10,7 +10,15 @@ public class MainMenuScript : MonoBehaviour
     public GameObject quitSelector;
     public GameObject play;
 
+    public AudioSource selectSound;
+    public AudioSource pressSound;
 
+    void Start()
+    {
+        selectSound.volume = 0.8f;
+        pressSound.volume = 0.8f;
+
+    }
     public void Play(){
         SceneManager.LoadScene("PrimeiraFase");
     }   
@@ -31,5 +39,14 @@ public class MainMenuScript : MonoBehaviour
             playSelector.SetActive(false);
             quitSelector.SetActive(true);
         }
+        if (Input.GetKeyDown(KeyCode.DownArrow) || (Input.GetKeyDown(KeyCode.UpArrow)))
+        {
+            selectSound.Play();
+        }
+
+    }
+    public void PressedSound()
+    {
+        pressSound.Play();
     }
 }
