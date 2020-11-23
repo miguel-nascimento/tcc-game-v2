@@ -42,15 +42,17 @@ public class Boss : MonoBehaviour
         }
     }
 
-    public void Update()
-    {
-        if (health <= 200)
-        {
-            growl.Play();
-            speed = 2.7f;
-            attackRange = 1.65f;
-        }
-    }
+    // public void Update()
+    // {
+    //     if (health <= 200)
+    //     {
+    //         growl.Play();
+    //         speed = 2.7f;
+    //         attackRange = 1.65f;
+    //         Debug.Log("angry!");
+    //     }
+    //     Debug.Log(health);
+    // }
 
 	public void LookAtPlayer()
 	{
