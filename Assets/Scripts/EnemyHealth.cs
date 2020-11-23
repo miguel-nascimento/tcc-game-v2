@@ -20,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
             Die();
         }
         currentHealth -= damageTaken;
+        
         blood.Play();
     }
 

@@ -83,6 +83,7 @@ public class PlayerPhysics : MonoBehaviour
         }
         foreach(Collider2D enemy in hitEnimies){
             enemy.GetComponent<EnemyHealth>().TakeDamage(player.damage);
+            enemy.GetComponent<Crystal>().TakeDamage(player.damage);
             Debug.Log("hit " + enemy.name);
         }
     }
