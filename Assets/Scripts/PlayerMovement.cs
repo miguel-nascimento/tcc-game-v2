@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class PlayerMovement : MonoBehaviour
 {
     PlayerPhysics phys;
@@ -68,6 +70,11 @@ public class PlayerMovement : MonoBehaviour
         phys.Move(new Vector2(x, y));
         anim.UpdateConditions();
         anim.FlipDirection();
+
+        if (!bossObject.scene.IsValid())
+        {
+            SceneManager.LoadScene("Creditos");
+        }
     }
     public void TakeDamage(float damageTaken)
     {
@@ -97,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
             boss.On();
             cam.gameObject.SetActive(false);
             bossCam.gameObject.SetActive(true);
+            Destroy(GameObject.Find("Boss Scene event collider"));
         }
     }
 }
